@@ -11,21 +11,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_API_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
+  local_dir: dist
+  target_branch: master
   on:
     branch: dev
-
-after_success: |
-  if [ -n "$GITHUB_API_TOKEN" ]; then
-    cd "$TRAVIS_BUILD_DIR"
-    # This generates a "web" directory containing the website.
-    make web
-    cd web
-    git init
-    git checkout dev
-    git add .
-    git -c user.name='mechanicore' -c user.email='mechanicoreframe@gmail.com' commit -m init
-    # Make sure to make the output quiet, or else the API token will leak!
-    # This works because the API key can replace your password.
-    git push -f -q https://mechanicore:$GITHUB_API_TOKEN@github.com/mechanicore/mechanicore.github.io dev &>/dev/null
-    cd "$TRAVIS_BUILD_DIR"
-  fi
