@@ -11,10 +11,10 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Info',
   data () {
     return {
-      msg: 'Home',
+      msg: 'Information',
     }
   },
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
   div#app
-    <img src="./assets/logo.png"/>
+    <img src="./assets/mechanicore.jpg"/>
     
     <router-view/>
 </template>
