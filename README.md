@@ -23,12 +23,15 @@ This project contains a default vue-cli (2.9.6) project using the webpack templa
 	- if `USE_SSL` is true, https version can be loaded from `https://localhost:8043`
 
 
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
 
 ## Travis CI/CD
 
 The website, accessible from [https://mechanicore.github.io](https://mechanicore.github.io) uses static build files pushed into the `master` branch.
 
-This can be be manually done by pushing directly into the `master` branch, or automatically from the `dev` branch. Please follow below instructions for automatic CI/CD using [Travis](https://travis-ci.com/).
+This can be be manually done by pushing directly into the `master` branch, or automatically by pushing into the `dev` branch. Please follow the instructions below for automatic CI/CD using [Travis](https://travis-ci.com/).
 
 
 ### Automactic CI/CD Using Travis
@@ -38,7 +41,7 @@ This can be be manually done by pushing directly into the `master` branch, or au
 
 2. Create a pull request for branch `dev` from the new `my-test-branch` that you've created.
 
-3. Wait for your pull request's approval.
+3. Approve the pull request.
 
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+4. View the travis CI status from [https://travis-ci.com/mechanicore/mechanicore.github.io](https://travis-ci.com/mechanicore/mechanicore.github.io). <br>
+New website updates can be viewed from [https://mechanicore.github.io](https://mechanicore.github.io) if the build passed.
