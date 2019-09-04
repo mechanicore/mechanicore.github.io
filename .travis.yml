@@ -4,7 +4,7 @@ node_js:
 
 cache: npm
 
-script: skip
+script: ./scripts/run-tests.sh
 
 deploy:
   provider: pages
