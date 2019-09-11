@@ -4,15 +4,18 @@ node_js:
 
 cache: npm
 
+# Set permissions
 before_script:
   - chmod +x ./scripts/build.sh
 
+# Run build script
 script: ./scripts/build.sh
 
+# Deploy only from `dev` branch
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_API_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: $GITHUB_API_TOKEN
   keep_history: true
   local_dir: dist
   target_branch: master
