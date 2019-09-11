@@ -1,8 +1,8 @@
 # mechanicore.github.io
 
-> Demo output website <br>
+> GitHub pages website <br>
 > A Vue.js project <br>
-> ###version 2.0.0 <br>
+> ### version 2.0
 > Static build files from the latest vue project at branch [dev](https://github.com/ciatph/ciatph.github.io/tree/vue-version)).
 Contains a basic Vue CLI project with `router-view`.
 
