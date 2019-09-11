@@ -4,7 +4,7 @@
 > A Vue.js project <br>
 > ### version 2.0
 > Static build files from the latest vue project at branch [dev](https://github.com/ciatph/ciatph.github.io/tree/vue-version)).
-Contains a basic Vue CLI project with `router-view`.
+Contains a basic Vue CLI project with `router-link`.
 
 This project contains a default vue-cli (2.9.6) project using the webpack template. 
 
