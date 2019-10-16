@@ -12,8 +12,17 @@
     p Pilot Name: {{ pilotName }}
     p Mech Name: {{ mechName }}
 
+    br
+
+    h3 Getters
+    p Max Count: {{ isMax }}
+
+    br
+
+    h3 Mutations
+
     span Add/Subtract &nbsp
-    button(@click="addCount") +
+    button(@click="incrementCount") +
     span &nbsp
     button(@click="deductCount") -
 
@@ -38,25 +47,36 @@
     button(
       @click="updateMechaName"
     ) Update Mecha
+
+    br
+    br
+
+    h3 Actions
+
+    button(
+      @click="loadPilotData"
+    ) Load Pilot Data
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Home',
+      msg: 'Home - Vuex Demo',
     }
   },
 
   computed: {
     ...mapState(['pilotName', 'mechName', 'totalCount']),
+    ...mapGetters(['isMax']),
   },
 
   methods: {
     ...mapMutations(['addCount', 'deductCount', 'updateName', 'updateMech']),
+    ...mapActions(['loadPilotData']),
 
     updateUserName() {
       if (this.$refs.username.value) {
@@ -68,6 +88,13 @@ export default {
       if (this.$refs.gundam.value) {
         this.updateMech(this.$refs.gundam.value)
       }
+    },
+
+    incrementCount() {
+      if (this.isMax) {
+        alert('MAX count reached!')
+      }
+      this.addCount()
     },
   },
 }
