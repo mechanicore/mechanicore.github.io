@@ -59,5 +59,11 @@ New GitHub pages website updates can be viewed from [https://mechanicore.github.
 
 
 
+## References
+
+[[1]](https://trello.com/c/jqnkh81D) - quick notes on using vuex
+
+
+
 @mechanicore<br>
 20190901
