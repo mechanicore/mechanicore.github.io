@@ -50,11 +50,24 @@ Read on this [reference](https://trello.com/c/0A36NOdS) for more information on 
 1. Create a branch from `dev`. <br>
 `git checkout -b my-test-branch`
 
-2. Create a pull request for branch `dev` from the new `my-test-branch` that you've created.
+2. Edit and push updates to `my-test-branch`.
 
-3. Approve the pull request.
+3. Create a new **Pull Request (PR)** from the `my-test-branch` that you've created to branch `dev`.
+	- Go to `my-test-branch` page in GitHub, using the branch navigator dropdown menu (Branch: my-updates-branch), or go to its repository url.i.e.:  
+https://github.com/ciatph/ciatph.github.io/tree/my-updates-branch
+	- Press the **[New pull request]** button beside the branch navigator dropdown menu.
+	
+4. Set the following in the resulting **"Open a pull request"** page:
+	- **base:** `dev`
+	- **compare:** `my-test-branch`
+	- Press the **[Create pull request]** button.
+	- **WAIT** for the Travis CI checks to finish.
 
-4. View the travis CI status from [https://travis-ci.com/mechanicore/mechanicore.github.io](https://travis-ci.com/mechanicore/mechanicore.github.io). <br>
+5. Press the **[Merge pull request]** button.  
+	> #### WARNING: 
+	> It is important to **WAIT** for the Travis CI checks from #4 to finish first before pressing this button, else the Travis CI build will fail pushing the built files to /master.
+
+6. View the travis CI status from [https://travis-ci.com/mechanicore/mechanicore.github.io](https://travis-ci.com/mechanicore/mechanicore.github.io). <br>
 New GitHub pages website updates can be viewed from [https://mechanicore.github.io](https://mechanicore.github.io) if the build passed.
 
 
