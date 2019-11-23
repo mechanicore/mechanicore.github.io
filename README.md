@@ -54,7 +54,7 @@ Read on this [reference](https://trello.com/c/0A36NOdS) for more information on 
 
 3. Create a new **Pull Request (PR)** from the `my-test-branch` that you've created to branch `dev`.
 	- Go to `my-test-branch` page in GitHub, using the branch navigator dropdown menu (Branch: my-updates-branch), or go to its repository url.i.e.:  
-https://github.com/ciatph/ciatph.github.io/tree/my-updates-branch
+https://github.com/mechanicore/mechanicore.github.io/tree/my-updates-branch
 	- Press the **[New pull request]** button beside the branch navigator dropdown menu.
 
 4. Set the following in the resulting **"Open a pull request"** page:
