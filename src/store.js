@@ -44,10 +44,7 @@ export default new Vuex.Store({
   actions: {
     loadPilotData(context, payload) {
       axios.get('/static/pilotdata.json').then((response) => {
-        console.log(response.data)
         context.commit('setPilotData', response.data[1])
-      }).catch((error) => {
-        console.log('error: ' + error)
       })
     },
   },
