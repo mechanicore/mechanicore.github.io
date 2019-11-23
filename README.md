@@ -56,15 +56,15 @@ Read on this [reference](https://trello.com/c/0A36NOdS) for more information on 
 	- Go to `my-test-branch` page in GitHub, using the branch navigator dropdown menu (Branch: my-updates-branch), or go to its repository url.i.e.:  
 https://github.com/ciatph/ciatph.github.io/tree/my-updates-branch
 	- Press the **[New pull request]** button beside the branch navigator dropdown menu.
-	
+
 4. Set the following in the resulting **"Open a pull request"** page:
 	- **base:** `dev`
 	- **compare:** `my-test-branch`
 	- Press the **[Create pull request]** button.
 	- **WAIT** for the Travis CI checks to finish.
 
-5. Press the **[Merge pull request]** button.  
-	> #### WARNING: 
+5. Press the **[Merge pull request]** button.
+	> #### WARNING:
 	> It is important to **WAIT** for the Travis CI checks from #4 to finish first before pressing this button, else the Travis CI build will fail pushing the built files to /master.
 
 6. View the travis CI status from [https://travis-ci.com/mechanicore/mechanicore.github.io](https://travis-ci.com/mechanicore/mechanicore.github.io). <br>
