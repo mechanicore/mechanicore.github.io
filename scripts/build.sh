@@ -2,7 +2,6 @@
 set -ev
 
 if [ "${GITHUB_API_TOKEN}" ]; then
-  npm install
   npm run lint
 
   # Build only from `dev` branch
