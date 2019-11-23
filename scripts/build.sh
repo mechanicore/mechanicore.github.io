@@ -3,6 +3,7 @@ set -ev
 
 if [ "${GITHUB_API_TOKEN}" ]; then
   npm run lint
+  npm run build
 
   # Build only from `dev` branch
   if [ "${TRAVIS_BRANCH}" = 'dev' -a "${TRAVIS_PULL_REQUEST}" = 'false' ]; then
